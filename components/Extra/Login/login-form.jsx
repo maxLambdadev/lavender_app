@@ -60,7 +60,6 @@ export function LoginForm(props) {
             [name]: true,
         }));   
         setObjectChangeFlag(!objectChangeFlag);
-        console.log('focused', {...focused, [name]: true})  
     };
     const handleBlur = (e) => {
         const { name, value } = e.target;
@@ -69,7 +68,6 @@ export function LoginForm(props) {
             [name]: false,
         })); 
         setObjectChangeFlag(!objectChangeFlag);
-        console.log('focused', {...focused, [name]: false})  
     };
 
     const handleSubmit = (e) => {
