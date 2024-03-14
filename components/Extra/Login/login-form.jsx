@@ -67,6 +67,7 @@ export function LoginForm(props) {
             ...prevState,
             [name]: false,
         })); 
+        validateForm(name, value);   
         setObjectChangeFlag(!objectChangeFlag);
     };
 
