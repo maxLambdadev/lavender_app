@@ -1,10 +1,19 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Dashboard from "@/components/Dashboard"
+import { getServerSession } from "next-auth/next"
+import { authOptions } from "@/lib/auth"
+import { redirect } from "next/navigation"
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+
+  if (!session?.user) redirect("/login");
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Dashboard />
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
