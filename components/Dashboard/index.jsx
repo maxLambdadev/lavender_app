@@ -8,7 +8,7 @@ export default function Dashboard(props) {
     
     return (
         <div className="dashboard-wra">
-            
+            Dashboard
         </div>
     )
 }
