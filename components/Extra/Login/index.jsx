@@ -109,7 +109,7 @@ export default function LoginForm(props) {
 
                 <div className="row">
                     <div className="col-md-6 no-padding sm-p-l-10">
-                        <div className="form-check hide">
+                        <div className="form-check">
                             <input type="checkbox" value="1" id="checkbox1" />
                             <label htmlFor="checkbox1">Remember me</label>
                         </div>
