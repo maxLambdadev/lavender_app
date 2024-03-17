@@ -83,7 +83,7 @@ export default function LoginForm(props) {
     }
 
     return (
-        <div className="login-wra">testingggggggggggggggggggggggggggggg
+        <div className="login-wra">
             <form id="form-login" className="p-t-15" role="form" action="index.html">
                 <div className={`form-group form-group-default ${!!errors?.username ? 'has-error' : ''} ${!!focused?.username ? 'focused' : ''}`} >
                     <label className={`${!!formData?.username ?'fade' : ''}`}>ID</label>
